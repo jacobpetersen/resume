@@ -141,6 +141,24 @@ li {
     padding: .5em;
     padding-top: 0;
 }
+.linkedInIcon:hover .linkedInCircle {
+    color: white;
+}
+.linkedInIcon:hover .fa-linkedin-in {
+    color: #0076b5;
+}
+.githubIcon:hover .githubCircle {
+    color: white;
+}
+.githubIcon:hover .fa-github {
+    color: #24292e;
+}
+.stackOverflowIcon:hover .stackOverflowCircle {
+    color: white;
+}
+.stackOverflowIcon:hover .fa-stack-overflow {
+    color: #F48024;
+}
 .linkedInCircle {
     color: #0076b5;
 }
@@ -166,6 +184,9 @@ nav a {
     font-size: 20px;
     color: white;
     text-decoration: none;
+}
+nav a:hover {
+    background-color: #202020;
 }
 .fixed {
     position: fixed;
