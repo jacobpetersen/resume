@@ -27,7 +27,14 @@
                 <a class="downloadResume" href="google.com">
                     Download Resume
                 </a>
-             </header>
+                <nav>
+                    <a href="#home" class="homeNav active">Home</a>
+                    <a href="#work" class="workNav">Work</a>
+                    <a href="#projects" class="projectsNav">Projects</a>
+                    <a href="#education" class="educationNav">Education</a>
+                </nav>
+            </header>
+
         </section>
         <section id="work">
             <div class="imageBackground">
@@ -266,4 +273,44 @@
             </div>
         </section>
     </body>
+    <script type="text/javascript">
+        let nav = document.getElementsByTagName('nav')[0];
+        let home = document.getElementById('home');
+        let work = document.getElementById('work');
+        let projects = document.getElementById('projects');
+        let education = document.getElementById('education');
+        window.addEventListener('scroll', function(e) {
+            let homeBottom = home.getBoundingClientRect().bottom - 60;
+            let workTop = work.getBoundingClientRect().top;
+            let projectsTop = projects.getBoundingClientRect().top;
+            let educationTop = education.getBoundingClientRect().top;
+            console.log(homeBottom);
+            if(homeBottom <= 0) {
+                nav.classList.add('fixed');
+            } else {
+                nav.classList.remove('fixed');
+            }
+            if(educationTop < 60) {
+                document.getElementsByClassName('educationNav')[0].classList.add('active');
+                document.getElementsByClassName('projectsNav')[0].classList.remove('active');
+                document.getElementsByClassName('workNav')[0].classList.remove('active');
+                document.getElementsByClassName('homeNav')[0].classList.remove('active');
+            } else if (projectsTop < 60) {
+                document.getElementsByClassName('educationNav')[0].classList.remove('active');
+                document.getElementsByClassName('projectsNav')[0].classList.add('active');
+                document.getElementsByClassName('workNav')[0].classList.remove('active');
+                document.getElementsByClassName('homeNav')[0].classList.remove('active');
+            } else if (workTop < 60) {
+                document.getElementsByClassName('educationNav')[0].classList.remove('active');
+                document.getElementsByClassName('projectsNav')[0].classList.remove('active');
+                document.getElementsByClassName('workNav')[0].classList.add('active');
+                document.getElementsByClassName('homeNav')[0].classList.remove('active');
+            } else {
+                document.getElementsByClassName('educationNav')[0].classList.remove('active');
+                document.getElementsByClassName('projectsNav')[0].classList.remove('active');
+                document.getElementsByClassName('workNav')[0].classList.remove('active');
+                document.getElementsByClassName('homeNav')[0].classList.add('active');
+            }
+        });
+    </script>
 </html>

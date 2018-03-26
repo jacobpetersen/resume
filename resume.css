@@ -67,14 +67,12 @@ li {
     height: 100vh;
 }
 #home header {
-
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
-
 }
 #home h1 {
     font-size: 60px;
@@ -146,4 +144,29 @@ li {
 }
 .githubCircle {
     color: #24292e;
+}
+nav {
+    background-color: black;
+    color: white;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+nav a {
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+}
+.active {
+    background-color: #202020;
 }
