@@ -134,7 +134,16 @@ li {
     background-color: white;
     color: black;
 }
-.orgInfo a img {
+.orgInfo > img, .orgInfo a img {
     padding: .5em;
     padding-top: 0;
+}
+.linkedInCircle {
+    color: #0076b5;
+}
+.stackOverflowCircle {
+    color: #F48024;
+}
+.githubCircle {
+    color: #24292e;
 }
