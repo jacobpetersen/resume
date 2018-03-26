@@ -1,0 +1,140 @@
+html, body {
+    font-family: sans-serif;
+    margin: 0;
+}
+h1, h2 {
+    margin: 0;
+}
+time {
+    display: block;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+
+.orgInfo {
+    text-align: center;
+}
+.fa-trophy {
+    color: gold;
+}
+[class*='fa-'] {
+    margin-right: 5px;
+}
+.extraDetail {
+    margin-bottom: 3px;
+    display: block;
+}
+.incognitoLink {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+.incognitoLink:hover {
+    text-decoration: underline;
+}
+.tag {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0 5px;
+    margin-right: 5px;
+    white-space: nowrap;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: normal;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 10px;
+}
+.imageBackground {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+#home {
+    background-image: url(images/backgrounds/landscape/work.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+#home header {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+
+}
+#home h1 {
+    font-size: 60px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+#home h2 {
+    width: 100%;
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+.sectionTitle {
+    min-height: 33vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.opaqueBackground {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sectionTitle h1 {
+    font-size: 50px;
+}
+#work .imageBackground{
+    background-image: url(images/backgrounds/landscape/projects.jpg);
+}
+#projects .imageBackground{
+    background-image: url(images/backgrounds/landscape/desk.jpg);
+}
+#education .imageBackground{
+    background-image: url(images/backgrounds/landscape/education.jpg);
+}
+.socialMediaIcons {
+    min-width: 95%;
+    display: block;
+    text-align: center;
+    padding: .5em;
+}
+.socialMediaIcons a {
+    color: white;
+}
+.downloadResume {
+    padding: .5em;
+    margin: .5em;
+    display: block;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.downloadResume:hover {
+    background-color: white;
+    color: black;
+}
+.orgInfo a img {
+    padding: .5em;
+    padding-top: 0;
+}
