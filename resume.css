@@ -1,6 +1,7 @@
 html, body {
     font-family: sans-serif;
     margin: 0;
+    color: #333333;
 }
 h1, h2 {
     margin: 0;
@@ -93,6 +94,10 @@ li {
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
+    margin: 60px 0;
+}
+.workSectionTitle{
+    margin-top: 0;
 }
 .opaqueBackground {
     background-color: rgba(0, 0, 0, 0.5);
