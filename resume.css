@@ -56,6 +56,9 @@ ul {
 li {
     margin-bottom: 10px;
 }
+li ul {
+    padding: 0 2em;
+}
 .imageBackground {
     background-size: cover;
     background-attachment: fixed;
@@ -194,5 +197,5 @@ nav a:hover {
     bottom: auto;
 }
 .active {
-    background-color: #202020;
+    background-color: #303030;
 }
