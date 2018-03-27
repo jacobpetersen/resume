@@ -8,7 +8,7 @@ var runSequence = require('run-sequence');
 var htmlmin = require('gulp-htmlmin');
 
 gulp.task('default', function(callback) {
-    runSequence('clean', ['minify', 'moveImages', 'moveFontAwesome'], callback)
+    runSequence('clean', ['minify', 'moveImages', 'moveFontAwesome', 'moveResume'], callback)
 });
 
 gulp.task('clean', function() {
@@ -31,5 +31,10 @@ gulp.task('moveImages', function() {
 
 gulp.task('moveFontAwesome', function() {
     return gulp.src('fontawesome-all.min.js')
+        .pipe(gulp.dest('dist'));
+});
+
+gulp.task('moveResume', function() {
+    return gulp.src('JacobPetersen-Resume.pdf')
         .pipe(gulp.dest('dist'));
 });
