@@ -34,9 +34,10 @@
         margin: 0 5px;
     }
     .grid-col-org {
-        width: 100%;
+        width: calc(100% - 10px);
+        margin-bottom: 20px;
     }
     .grid-col-roles {
-        width: 100%;
+        width: calc(100% - 10px);
     }
 }

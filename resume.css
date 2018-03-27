@@ -9,7 +9,6 @@ h1, h2 {
 time {
     display: block;
     font-style: italic;
-    margin-bottom: 3px;
 }
 
 .orgInfo {
@@ -38,7 +37,8 @@ time {
     border-radius: 3px;
     padding: 0 5px;
     margin-right: 5px;
-    white-space: nowrap;
+    margin-top: 5px;
+    display: inline-block;
 }
 
 h1{
@@ -198,4 +198,28 @@ nav a:hover {
 }
 .active {
     background-color: #303030;
+}
+.narrowMenu {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .wideMenu {
+        display: none;
+    }
+    .narrowMenu {
+        display: inline;
+    }
+    nav a {
+        width: 25%;
+    }
+}
+.footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 60px 0;
+    margin-top: 60px;
+}
+.footer a {
+    color: white;
 }
