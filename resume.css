@@ -62,12 +62,11 @@ li ul {
 .imageBackground {
     background-size: cover;
     background-attachment: fixed;
+    background-position: center;
     color: white;
 }
 #home {
     background-image: url(images/backgrounds/landscape/work.jpg);
-    background-attachment: fixed;
-    background-size: cover;
     height: 100vh;
 }
 #home header {
@@ -211,6 +210,12 @@ nav a:hover {
     }
     nav a {
         width: 25%;
+    }
+    .imageBackground {
+        background-attachment: inherit;
+        background-size: cover;
+        background-position: center;
+        color: white;
     }
 }
 .footer {
